@@ -1,0 +1,36 @@
+default: &default
+  test_url: https://www.baidu.com
+  base_url: http://127.0.0.1:3000
+  mysql:
+    username: root
+    password: 123456
+  redis:
+  apis:
+    basic_api:
+      login_api: 
+        path: '/users/login'
+        method: post
+    users_api:
+      users_list:
+        path: '/users'
+        method: get
+      users_create:
+        path: '/users'
+        method: post
+      users_info:
+        path: '/users/$id'
+        method: get
+      users_delete:
+        path: '/user/$id'
+production:
+  basic:
+    base_url: 127.0.0.1
+    base_port: 3000
+  mysql:
+    username: root
+    password: 123456
+
+development: 
+  <<: *default
+
+

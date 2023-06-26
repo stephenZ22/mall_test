@@ -1,7 +1,8 @@
 
-from config import settings
 import requests
 import pytest
+import allure
+from config import settings
 from data import users_data
 
 url = settings.Settings().testUrl()
@@ -19,6 +20,7 @@ def get_users_login_items():
     return items
 
 
+@allure.feature("普通用户登录")
 @pytest.mark.parametrize("email,password", get_users_login_items())
 def test_user_login(email, password):
     header = {

@@ -1,0 +1,6 @@
+login_users:
+  - {email: 'xiaoming@mall.com', password: '123456'}
+  - {email: 'gailun@mall.com', password: '123456'}
+  - {email: 'amumu@mall.com', password: '123456'}
+
+

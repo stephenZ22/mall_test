@@ -20,4 +20,4 @@ def login_users():
 
 
 if __name__ == "__main__":
-    print(users())
+    users()

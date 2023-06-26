@@ -11,5 +11,9 @@ login_users:
       email: 'amumu@mall.com', 
       password: '123456'
     }
+  - {
+      email: 'aixi@mall.com', 
+      password: 'abcdefg'
+    }
 
 
